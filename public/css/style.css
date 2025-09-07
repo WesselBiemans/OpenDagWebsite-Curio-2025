@@ -12,3 +12,46 @@ Licht Blauw     = #56DDF0   Blauw           = #0050FF   Donker Blauw    = #03357
 
 Licht Paars     = #BEB0FF   Paars           = #9535F9   Donker Paars    = #69197C
 */
+
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #9535F9;
+    font-size: 30px;
+    width: 100%;
+    background-color: #C0ED0C;
+    padding: 10px 0px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+a {
+    color: #0050FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #56DDF0;
+}
+
+a:active {
+    color: #03357C;
+}
+
+img {
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
