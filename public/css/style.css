@@ -187,4 +187,46 @@ nav a:hover {
     color: #FFFFFF;
 }
 
+/* ================= Lesrooster ================= */
+
+.lesrooster-container {
+    margin-bottom: 60px;
+}
+
+.lesrooster-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesrooster-text p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.lesrooster-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03357C;
+    color: white
+}
+
+.lesrooster-buttons p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lesrooster-buttons button {
+    margin: 15px 50px;
+    background-color: #000000;
+    padding: 5px;
+}
+
+.lesrooster-images img {
+    margin: 0 auto;
+}
 
