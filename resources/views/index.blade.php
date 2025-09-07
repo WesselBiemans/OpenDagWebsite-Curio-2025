@@ -113,11 +113,11 @@
                 </div>
                 <div class="lesrooster-frame">
                     <div class="lesrooster-buttons">
-                        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <button onclick="previousDay()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <path fill="#fff" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
                             </svg></button>
                         <p id="day">Maandag</p>
-                        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <button onclick="nextDay()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <path fill="#fff" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
                             </svg></button>
                     </div>
@@ -138,12 +138,32 @@
     <footer>
 
     </footer>
-
 </body>
 
 <script>
+    let currentImage = 0;
+    let days = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag"];
+
     function toggleDescription(subject) {
         document.getElementById(subject).hidden = !document.getElementById(subject).hidden;
+    }
+
+    function previousDay() {
+        if (currentImage != 0) {
+            document.getElementById(currentImage.toString()).hidden = true;
+            currentImage--;
+            document.getElementById("day").innerHTML = days[currentImage];
+            document.getElementById(currentImage.toString()).hidden = false;
+        }
+    }
+
+    function nextDay() {
+        if (currentImage != 4) {
+            document.getElementById(currentImage.toString()).hidden = true;
+            currentImage++;
+            document.getElementById("day").innerHTML = days[currentImage];
+            document.getElementById(currentImage.toString()).hidden = false;
+        }
     }
 </script>
 
