@@ -55,3 +55,87 @@ img {
     width: 70%;
     margin: 0 auto;
 }
+
+/* ================= Header ================= */
+header {
+    width: 100%;
+    background-color: #FFCC00;
+    padding: 10px;
+    position: fixed;
+}
+
+header img {
+    width: 100px;
+}
+
+.header-container {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+nav a {
+    padding: 5px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= Intro ================= */
+
+.intro-container {
+    padding: 130px 0px 50px 0px;
+    background-image: url(https://jonayre.uk/blog/wp-content/uploads/2022/10/code.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.intro-container .container {
+    background-color: #000000aa;
+    padding: 40px 0px;
+}
+
+.intro-container h1 {
+    color: #2ADD5D;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.intro-container p {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.intro-container input {
+    padding: 10px 40px;
+    margin-top: 20px;
+    background-color: #0050FF;
+    border-color: #03357C;
+    color: #56DDF0;
+    font-size: 18px;
+}
+
+.intro-container input:hover {
+    background-color: #56DDF0;
+    color: #03357C;
+    border-color: #0050FF;
+}
+
+.intro-container input:active {
+    background-color: #03357C;
+    border-color: #000000;
+    color: #000000;
+}
+
