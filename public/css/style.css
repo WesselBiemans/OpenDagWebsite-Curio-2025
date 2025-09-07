@@ -350,3 +350,82 @@ footer {
     margin-left: 40px;
 }
 
+/* ================= Media queries ================= */
+/* Vakken groter maken */
+@media only screen and (max-width: 1300px) {
+    .vak {
+        width: 30%;
+    }
+}
+
+/* Verstop header */
+/* School Traject zet opstelling verticaal */
+@media only screen and (max-width: 1200px) {
+    header {
+        display: none;
+    }
+
+    .intro-container {
+        padding: 50px 0px;
+    }
+
+    .normaal-frame .content,
+    .versneld-frame .content {
+        grid-template-columns: 100%;
+    }
+
+    .normaal-frame .text,
+    .versneld-frame .text {
+        border-right: none;
+        border-bottom: 3px #03357C dashed;
+    }
+
+    .normaal-frame img,
+    .versneld-frame img {
+        margin: 0 auto;
+    }
+}
+
+/* Vakken 1 per rij*/
+/* Lesrooster knoppen header groter maken */
+@media only screen and (max-width: 1000px) {
+    .vak {
+        width: 100%;
+    }
+
+    .lesrooster-buttons {
+        width: 70%;
+    }
+}
+
+/* Footer op elkaar stapelen */
+@media only screen and (max-width: 800px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .socials {
+        min-width: 200px;
+    }
+}
+
+/* Lesrooster knoppen header nog groter maken */
+/* container volledig breedte maken */
+/* Lijnen tussen onderdelen in footer weghalen */
+@media only screen and (max-width: 500px) {
+    .vak {
+        width: 100%;
+    }
+
+    .lesrooster-buttons {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .line {
+        display: none;
+    }
+}
