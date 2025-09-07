@@ -130,8 +130,36 @@
                     </div>
                 </div>
             </div>
+            <p id="trajecten"></p>
+        </div>
+
+        <div class="trajecten-container">
+            <div class="container">
+                <h2>Trajecten</h2>
+                <div class="traject-buttons">
+                    <button id="normal-button">Normaal schooltraject</button>
+                    <button id="fast-button">Versneld schooltraject</button>
+                </div>
+                <div class="normaal-frame">
+                    <div class="content">
+                        <div class="text">
+                            <p>Het normaal school traject is 4 jaar lang, is verdeeld over 7 blokken en bevat twee stages.<br><br>Het eerste jaar gaat vooral over de basis met programmeren, denk aan het maken van websites en het maken van applicaties in C#.<br><br>Jaar 2 ga je voorbereiden op stage lopen met meer theorie.<br><br>Jaar 3 gaat over het verdiepen in een specifieke richting, zoals in websites maken of in applicaties maken. Daarna doe je in het tweedehelft je examens.<br><br>Als laatste jaar is je 2de stage, die duurt het gehele jaar.</p>
+                        </div>
+                        <img src="{{ asset('img/blokken-normaal.png') }}" alt="Normaal traject">
+                    </div>
+                </div>
+                <div class="versneld-frame" hidden>
+                    <div class="content">
+                        <div class="text">
+                            <p>Na blok A (halverwege jaar 1) kan je pas beslissen om te versnellen. Deze keuze kan alleen gemaakt worden als je blok A op tijd en voldoende hebt afgerond. Je kan natuurlijk ook beslissen om alsnog het normaal 4-jarig traject te volgen.<br><br><br><br>Alle blokken, behalve blok E, worden nogsteeds uitgevoerd, maar wel met een verhoogd tempo. Ook komt het versnelde Blok G, het 2de stage blok, op de plek van Blok E.</p>
+                        </div>
+                        <img src="{{ asset('img/blokken-versneld.png') }}" alt="Versneld traject">
+                    </div>
+                </div>
+            </div>
 
         </div>
+
 
     </main>
 
@@ -141,6 +169,7 @@
 </body>
 
 <script>
+
     let currentImage = 0;
     let days = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag"];
 
@@ -165,6 +194,7 @@
             document.getElementById(currentImage.toString()).hidden = false;
         }
     }
+
 </script>
 
 </html>
