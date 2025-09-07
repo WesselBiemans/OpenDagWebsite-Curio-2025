@@ -157,14 +157,21 @@
                     </div>
                 </div>
             </div>
-
+            <p id="eigen-mening"></p>
         </div>
 
-
+        <div class="mening-container">
+            <div class="container">
+                <h2>Eigen mening</h2>
+                <p>Ik zelf vind het een erg fijne opleiding hier. Je hebt genoeg vrijheid om heel veel creativiteit in projecten te stoppen (zie mijn "lingo" project hieronder). Als je hulp nodig hebt zijn alle leraren erg vriendelijk en zorgen ervoor dat je ook gelijk weet hoe je zelf het probleem kan oplossen. Het voelt gek, maar ik heb na de vakantie gewoon zin om weer terug op deze school te zijn!</p>
+                <img src="{{ asset('img/lingo-app.png') }}" alt="Lingo app">
+            </div>
+        </div>
     </main>
 
     <footer>
         
+    </footer>
 </body>
 
 <script>
