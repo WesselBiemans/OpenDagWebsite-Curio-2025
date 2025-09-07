@@ -102,15 +102,43 @@
                     </div>
                 </div>
             </div>
-
+            <p id="rooster"></p>
         </div>
 
+        <div class="lesrooster-container">
+            <div class="container">
+                <div class="lesrooster-text">
+                    <h2>Lesrooster (1ste jaar)</h2>
+                    <p>Hier is een interactieve rooster van de eerste paar weken van jaar 1. In dikgedrukt staat het vak en lokalen waarin de les wordt gegeven is aangegeven Met RN(lokaal nummer). De meeste schooldagen beginnen om 8:30 en eindigen om 17:00 uur.</p>
+                </div>
+                <div class="lesrooster-frame">
+                    <div class="lesrooster-buttons">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="#fff" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                            </svg></button>
+                        <p id="day">Maandag</p>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path fill="#fff" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
+                            </svg></button>
+                    </div>
+                    <div class="lesrooster-images">
+                        <img id="0" src="{{ asset('img/0.png') }}" alt="Rooster van 1ste jaar maandag">
+                        <img id="1" src="{{ asset('img/1.png') }}" alt="Rooster van 1ste jaar dinsdag" hidden>
+                        <img id="2" src="{{ asset('img/2.png') }}" alt="Rooster van 1ste jaar woensdag" hidden>
+                        <img id="3" src="{{ asset('img/3.png') }}" alt="Rooster van 1ste jaar donderdag" hidden>
+                        <img id="4" src="{{ asset('img/1.png') }}" alt="Rooster van 1ste jaar vrijdag" hidden>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
     <footer>
 
     </footer>
+
 </body>
 
 <script>
