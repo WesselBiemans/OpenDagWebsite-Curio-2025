@@ -137,8 +137,8 @@
             <div class="container">
                 <h2>Trajecten</h2>
                 <div class="traject-buttons">
-                    <button id="normal-button">Normaal schooltraject</button>
-                    <button id="fast-button">Versneld schooltraject</button>
+                    <button onclick="showNormal()" id="normal-button">Normaal schooltraject</button>
+                    <button onclick="showFast()" id="fast-button">Versneld schooltraject</button>
                 </div>
                 <div class="normaal-frame">
                     <div class="content">
@@ -164,11 +164,13 @@
     </main>
 
     <footer>
-
-    </footer>
+        
 </body>
 
 <script>
+    window.onload = function trajectButtonColor() {
+        document.getElementById("fast-button").style.backgroundColor = "#9535F9";
+    }
 
     let currentImage = 0;
     let days = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag"];
@@ -195,6 +197,19 @@
         }
     }
 
+    function showNormal() {
+        document.querySelector(".versneld-frame").hidden = true;
+        document.querySelector(".normaal-frame").hidden = false;
+        document.getElementById("fast-button").style.backgroundColor = "#9535F9";
+        document.getElementById("normal-button").style.backgroundColor = "#BEB0FF";
+    }
+
+    function showFast() {
+        document.querySelector(".normaal-frame").hidden = true;
+        document.querySelector(".versneld-frame").hidden = false;
+        document.getElementById("normal-button").style.backgroundColor = "#9535F9";
+        document.getElementById("fast-button").style.backgroundColor = "#BEB0FF";
+    }
 </script>
 
 </html>
