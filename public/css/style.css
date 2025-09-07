@@ -139,3 +139,52 @@ nav a:hover {
     color: #000000;
 }
 
+/* ================= Vakken ================= */
+
+.vakken-container {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.vakken-container .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.vakken {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.vak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0050FF;
+    color: #FFCC00;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 25px;
+    min-height: 150px;
+    width: 23%;
+}
+
+.vak h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.vak:hover {
+    background-color: #03357C;
+}
+
+.vak-description {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
