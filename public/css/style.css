@@ -286,3 +286,26 @@ nav a:hover {
     align-items: center;
 }
 
+/* ================= Eigen Mening ================= */
+.mening-container {
+    margin-bottom: 60px;
+}
+
+.mening-container p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mening-container .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mening-container img {
+    max-width: 90%;
+}
+
+
